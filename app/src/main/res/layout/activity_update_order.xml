@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.aps.user.sametime.Orders"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:background="@color/colorPrimary"
+            android:elevation="4dp"
+            android:id="@+id/tool_bar"
+            app:titleTextColor="#fff"
+            app:title="Orders">
+
+        </android.support.v7.widget.Toolbar>
+        <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:fitsSystemWindows="true"
+            android:paddingBottom="40dp"
+            android:clipToPadding="false">
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context=".AddOrder"
+                android:orientation="vertical"
+                android:padding="15dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Customer Details"
+                    android:textSize="25dp"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="12dp"/>
+
+
+
+                <LinearLayout
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dip">
+
+                    <TextView android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="#372c24"
+                        android:text="CLIENT NAME"/>
+
+
+                    <TextView android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dip"
+                        android:layout_marginBottom="12dp"
+                        android:background="@drawable/show_order_text"
+                        android:padding="12dp"
+                        android:textColor="#372c24"
+                        android:inputType="textPersonName"
+                        android:id="@+id/et_clientName"/>
+                    <!--  Password Label -->
+                    <TextView android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="#372c24"
+                        android:text="COMPANY NAME"/>
+                    <TextView android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dip"
+                        android:background="@drawable/show_order_text"
+                        android:padding="12dp"
+                        android:textColor="#372c24"
+                        android:layout_marginBottom="12dp"
+                        android:id="@+id/et_companyName"
+                        />
+                    <TextView android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="#372c24"
+                        android:text="COUNTRY"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawSelectorOnTop="true"
+                        android:id="@+id/country"
+                        android:padding="12dp"
+                        android:textColor="#372c24"
+                        android:background="@drawable/show_order_text"
+                        android:layout_marginBottom="12dp"
+                        >
+                    </TextView>
+
+                    <TextView android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="#372c24"
+                        android:text="STATE"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/show_order_text"
+                        android:id="@+id/state"
+                        android:textColor="#372c24"
+                        android:padding="12dp"
+                        android:layout_marginBottom="12dp">
+                    </TextView>
+
+                    <TextView android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="#372c24"
+                        android:text="CITY"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawSelectorOnTop="true"
+                        android:id="@+id/city"
+                        android:padding="12dp"
+                        android:textColor="#372c24"
+                        android:background="@drawable/show_order_text"
+                        android:layout_marginBottom="12dp">
+                    </TextView>
+
+                    <TextView android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="#372c24"
+                        android:text="LOCATION"/>
+                    <TextView android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dip"
+                        android:background="@drawable/show_order_text"
+                        android:padding="12dp"
+                        android:textColor="#372c24"
+                        android:layout_marginBottom="12dp"
+                        android:id="@+id/et_location"/>
+                    <TextView android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="#372c24"
+                        android:text="MOBILE NO."/>
+                    <TextView android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dip"
+                        android:background="@drawable/show_order_text"
+                        android:padding="12dp"
+                        android:textColor="#372c24"
+                        android:layout_marginBottom="12dp"
+                        android:inputType="phone"
+                        android:id="@+id/et_mobile"/>
+                    <TextView android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="#372c24"
+                        android:text="EMAIL ID"/>
+                    <TextView android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dip"
+                        android:background="@drawable/show_order_text"
+                        android:padding="12dp"
+                        android:textColor="#372c24"
+                        android:inputType="textEmailAddress"
+                        android:layout_marginBottom="12dp"
+                        android:id="@+id/et_email"/>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Project Details"
+                        android:textSize="25dp"
+                        android:textStyle="bold"
+                        android:layout_marginBottom="12dp"/>
+
+                    <TextView android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="#372c24"
+                        android:text="PROJECT NAME"
+                        android:layout_marginBottom="5dip"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawSelectorOnTop="true"
+                        android:id="@+id/projectName"
+                        android:padding="12dp"
+                        android:textColor="#372c24"
+                        android:background="@drawable/show_order_text"
+                        android:layout_marginBottom="12dp">
+                    </TextView>
+                    <TextView android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="#372c24"
+                        android:text="TIME PERIOD"/>
+                    <TextView android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dip"
+                        android:padding="12dp"
+                        android:textColor="#372c24"
+                        android:layout_marginBottom="12dp"
+                        android:background="@drawable/show_order_text"
+                        android:id="@+id/et_timePeriod"
+                        />
+                    <TextView android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="#372c24"
+                        android:text="CURRENCY"/>
+                    <TextView android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dip"
+                        android:background="@drawable/show_order_text"
+                        android:padding="12dp"
+                        android:textColor="#372c24"
+                        android:layout_marginBottom="12dp"
+                        android:id="@+id/et_currency"/>
+                    <TextView android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="#372c24"
+                        android:text="SECURITY FEES"/>
+                    <TextView android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dip"
+                        android:background="@drawable/show_order_text"
+                        android:padding="12dp"
+                        android:textColor="#372c24"
+                        android:layout_marginBottom="12dp"
+                        android:id="@+id/et_securityFee"/>
+
+                    <TextView android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="#372c24"
+                        android:text="CURRENCY RATE IN INR"/>
+                    <TextView android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dip"
+                        android:background="@drawable/show_order_text"
+                        android:padding="12dp"
+                        android:textColor="#372c24"
+                        android:layout_marginBottom="12dp"
+                        android:id="@+id/et_rateInINR"/>
+                    <TextView android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="#372c24"
+                        android:text="TOTAL AMOUNT"/>
+                    <TextView android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dip"
+                        android:background="@drawable/show_order_text"
+                        android:padding="12dp"
+                        android:textColor="#372c24"
+                        android:layout_marginBottom="12dp"
+                        android:id="@+id/et_totalAmount"/>
+                    <TextView android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="#372c24"
+                        android:text="SLOT DATE"/>
+                    <TextView android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dip"
+                        android:background="@drawable/show_order_text"
+                        android:padding="12dp"
+                        android:textColor="#372c24"
+                        android:layout_marginBottom="12dp"
+                        android:id="@+id/et_slotDate"/>
+                    <TextView android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="#372c24"
+                        android:text="ADVANCE AMOUNT"/>
+                    <TextView android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dip"
+                        android:background="@drawable/show_order_text"
+                        android:padding="12dp"
+                        android:textColor="#372c24"
+                        android:layout_marginBottom="12dp"
+                        android:id="@+id/et_advanceAmount"/>
+                    <TextView android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="#372c24"
+                        android:text="BALANCE AMOUNT"
+                        />
+                    <EditText android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dip"
+                        android:background="@drawable/show_order_text"
+                        android:padding="12dp"
+                        android:inputType="number"
+                        android:textColor="#372c24"
+                        android:layout_marginBottom="12dp"
+                        android:id="@+id/et_balanceAmount"/>
+                    <TextView android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="#372c24"
+                        android:text="SECOND AMOUNT"/>
+                    <EditText android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dip"
+                        android:background="@drawable/show_order_text"
+                        android:padding="12dp"
+                        android:inputType="number"
+                        android:textColor="#372c24"
+                        android:layout_marginBottom="12dp"
+                        android:id="@+id/et_secondAmount"
+                        />
+
+                    <TextView android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="#372c24"
+                        android:text="PAYMENT MODE"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawSelectorOnTop="true"
+                        android:id="@+id/paymentMode"
+                        android:padding="12dp"
+                        android:textColor="#372c24"
+                        android:background="@drawable/show_order_text"
+                        android:layout_marginBottom="12dp">
+                    </TextView>
+                    <TextView android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="#372c24"
+                        android:text="PAYMENT DETAILS"/>
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dip"
+                        android:background="@drawable/show_order_text"
+                        android:padding="12dp"
+                        android:textColor="#372c24"
+                        android:id="@+id/payment_details"
+                        android:layout_marginBottom="12dp"
+                        />
+
+                </LinearLayout>
+
+                <Button android:id="@+id/editButton"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dip"
+                    android:text="Update"
+                    android:textColor="#fff"
+                    android:background="@drawable/button_background"/>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>
